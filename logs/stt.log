@@ -9984,3 +9984,161 @@ Traceback (most recent call last):
     raise self.failureException(msg)
 AssertionError: '投资金额必须大于100，并且可以被100整除' not found in '充值金额必须大于100，并且可以被100整除'
 2021-08-23 17:28:06,028 - [test_07invest.py-->line:109] - INFO: 用例--------【价格大于余额】---------执行成功
+2021-08-24 13:40:43,703 - [test_01register.py-->line:88] - INFO: 用例--【注册成功-带注册名】---执行成功
+2021-08-24 13:40:44,163 - [test_01register.py-->line:88] - INFO: 用例--【注册成功-不带注册名】---执行成功
+2021-08-24 13:40:44,226 - [test_01register.py-->line:88] - INFO: 用例--【不输入手机号】---执行成功
+2021-08-24 13:40:44,596 - [test_01register.py-->line:88] - INFO: 用例--【手机号长度10位】---执行成功
+2021-08-24 13:40:44,950 - [test_01register.py-->line:88] - INFO: 用例--【手机号长度12位】---执行成功
+2021-08-24 13:40:45,308 - [test_01register.py-->line:88] - INFO: 用例--【手机号含非法字符】---执行成功
+2021-08-24 13:40:45,618 - [test_01register.py-->line:88] - INFO: 用例--【已注册过的手机号】---执行成功
+2021-08-24 13:40:45,986 - [test_01register.py-->line:88] - INFO: 用例--【密码7位】---执行成功
+2021-08-24 13:40:46,358 - [test_01register.py-->line:88] - INFO: 用例--【密码17位】---执行成功
+2021-08-24 13:40:46,718 - [test_01register.py-->line:88] - INFO: 用例--【不输入密码】---执行成功
+2021-08-24 13:40:47,080 - [test_01register.py-->line:88] - INFO: 用例--【注册名11位】---执行成功
+2021-08-24 13:40:47,444 - [test_01register.py-->line:88] - INFO: 用例--【类型输入非0，1内容】---执行成功
+2021-08-24 13:40:47,597 - [test_02login.py-->line:56] - INFO: 用例--【登录成功-带登录名】---执行成功
+2021-08-24 13:40:47,752 - [test_02login.py-->line:56] - INFO: 用例--【登录成功-不带登录名】---执行成功
+2021-08-24 13:40:47,815 - [test_02login.py-->line:56] - INFO: 用例--【不输入手机号】---执行成功
+2021-08-24 13:40:47,876 - [test_02login.py-->line:56] - INFO: 用例--【手机号长度10位】---执行成功
+2021-08-24 13:40:47,944 - [test_02login.py-->line:56] - INFO: 用例--【手机号长度12位】---执行成功
+2021-08-24 13:40:48,012 - [test_02login.py-->line:56] - INFO: 用例--【手机号含非法字符】---执行成功
+2021-08-24 13:40:48,077 - [test_02login.py-->line:56] - INFO: 用例--【已登录过的手机号】---执行成功
+2021-08-24 13:40:48,142 - [test_02login.py-->line:56] - INFO: 用例--【密码7位】---执行成功
+2021-08-24 13:40:48,213 - [test_02login.py-->line:56] - INFO: 用例--【密码17位】---执行成功
+2021-08-24 13:40:48,276 - [test_02login.py-->line:56] - INFO: 用例--【不输入密码】---执行成功
+2021-08-24 13:40:48,432 - [test_02login.py-->line:56] - INFO: 用例--【登录名11位】---执行成功
+2021-08-24 13:40:48,601 - [test_02login.py-->line:56] - INFO: 用例--【类型输入非0，1内容】---执行成功
+2021-08-24 13:40:49,116 - [test_03recharge.py-->line:107] - INFO: 用例--【充值正常输入存在用户id、金额】---执行成功
+2021-08-24 13:40:49,419 - [test_03recharge.py-->line:107] - INFO: 用例--【充值只输入金额】---执行成功
+2021-08-24 13:40:49,723 - [test_03recharge.py-->line:101] - ERROR: 用例--【充值只输入存在户id】---执行失败
+2021-08-24 13:40:49,723 - [test_03recharge.py-->line:103] - ERROR: {'code': 2, 'msg': '金额必须为数值型'} not in {'code': 2, 'msg': '余额必须为数值型', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+Traceback (most recent call last):
+  File "D:\work\zx5jkzdh\jichu\py35_21day_project\testcases\test_03recharge.py", line 91, in test_recharge
+    self.assertDictIn(expected, res)
+  File "D:\work\zx5jkzdh\jichu\py35_21day_project\testcases\test_03recharge.py", line 115, in assertDictIn
+    raise AssertionError("{} not in {}".format(expected, res))
+AssertionError: {'code': 2, 'msg': '金额必须为数值型'} not in {'code': 2, 'msg': '余额必须为数值型', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-08-24 13:40:50,025 - [test_03recharge.py-->line:107] - INFO: 用例--【充值输入不存在户id、金额】---执行成功
+2021-08-24 13:40:50,325 - [test_03recharge.py-->line:101] - ERROR: 用例--【充值输入存在户id、小于0金额】---执行失败
+2021-08-24 13:40:50,325 - [test_03recharge.py-->line:103] - ERROR: {'code': 2, 'msg': '金额必须大于0并且小于或者等于500000'} not in {'code': 2, 'msg': '余额必须大于0并且小于或者等于500000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+Traceback (most recent call last):
+  File "D:\work\zx5jkzdh\jichu\py35_21day_project\testcases\test_03recharge.py", line 91, in test_recharge
+    self.assertDictIn(expected, res)
+  File "D:\work\zx5jkzdh\jichu\py35_21day_project\testcases\test_03recharge.py", line 115, in assertDictIn
+    raise AssertionError("{} not in {}".format(expected, res))
+AssertionError: {'code': 2, 'msg': '金额必须大于0并且小于或者等于500000'} not in {'code': 2, 'msg': '余额必须大于0并且小于或者等于500000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-08-24 13:40:50,627 - [test_03recharge.py-->line:101] - ERROR: 用例--【充值输入存在户id、大于50万金额】---执行失败
+2021-08-24 13:40:50,627 - [test_03recharge.py-->line:103] - ERROR: {'code': 2, 'msg': '金额必须大于0并且小于或者等于500000'} not in {'code': 2, 'msg': '余额必须大于0并且小于或者等于500000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+Traceback (most recent call last):
+  File "D:\work\zx5jkzdh\jichu\py35_21day_project\testcases\test_03recharge.py", line 91, in test_recharge
+    self.assertDictIn(expected, res)
+  File "D:\work\zx5jkzdh\jichu\py35_21day_project\testcases\test_03recharge.py", line 115, in assertDictIn
+    raise AssertionError("{} not in {}".format(expected, res))
+AssertionError: {'code': 2, 'msg': '金额必须大于0并且小于或者等于500000'} not in {'code': 2, 'msg': '余额必须大于0并且小于或者等于500000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-08-24 13:40:50,918 - [test_03recharge.py-->line:101] - ERROR: 用例--【充值输入存在户id、精确到小数后三位金额】---执行失败
+2021-08-24 13:40:50,919 - [test_03recharge.py-->line:103] - ERROR: {'code': 2, 'msg': '金额小数超过两位'} not in {'code': 2, 'msg': '余额小数超过两位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+Traceback (most recent call last):
+  File "D:\work\zx5jkzdh\jichu\py35_21day_project\testcases\test_03recharge.py", line 91, in test_recharge
+    self.assertDictIn(expected, res)
+  File "D:\work\zx5jkzdh\jichu\py35_21day_project\testcases\test_03recharge.py", line 115, in assertDictIn
+    raise AssertionError("{} not in {}".format(expected, res))
+AssertionError: {'code': 2, 'msg': '金额小数超过两位'} not in {'code': 2, 'msg': '余额小数超过两位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-08-24 13:40:51,225 - [test_03recharge.py-->line:101] - ERROR: 用例--【充值输入存在户id、非数字金额】---执行失败
+2021-08-24 13:40:51,226 - [test_03recharge.py-->line:103] - ERROR: {'code': 2, 'msg': '金额必须为数值型'} not in {'code': 2, 'msg': '余额必须为数值型', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+Traceback (most recent call last):
+  File "D:\work\zx5jkzdh\jichu\py35_21day_project\testcases\test_03recharge.py", line 91, in test_recharge
+    self.assertDictIn(expected, res)
+  File "D:\work\zx5jkzdh\jichu\py35_21day_project\testcases\test_03recharge.py", line 115, in assertDictIn
+    raise AssertionError("{} not in {}".format(expected, res))
+AssertionError: {'code': 2, 'msg': '金额必须为数值型'} not in {'code': 2, 'msg': '余额必须为数值型', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-08-24 13:40:51,689 - [test_04withdraw.py-->line:103] - INFO: 用例--【提现用户id和金额都正确】---执行成功
+2021-08-24 13:40:51,979 - [test_04withdraw.py-->line:103] - INFO: 用例--【提现用户id没有】---执行成功
+2021-08-24 13:40:52,271 - [test_04withdraw.py-->line:97] - ERROR: 用例--【提现金额没有】---执行失败
+2021-08-24 13:40:52,271 - [test_04withdraw.py-->line:99] - ERROR: {'code': 2, 'msg': '金额为空'} not in {'code': 1, 'msg': '余额为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+Traceback (most recent call last):
+  File "D:\work\zx5jkzdh\jichu\py35_21day_project\testcases\test_04withdraw.py", line 90, in test_withdraw
+    self.assertDictIn(expected, res)
+  File "D:\work\zx5jkzdh\jichu\py35_21day_project\testcases\test_04withdraw.py", line 111, in assertDictIn
+    raise AssertionError("{} not in {}".format(expected,res))
+AssertionError: {'code': 2, 'msg': '金额为空'} not in {'code': 1, 'msg': '余额为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-08-24 13:40:52,576 - [test_04withdraw.py-->line:103] - INFO: 用例--【提现用户id错误和金额正确】---执行成功
+2021-08-24 13:40:52,865 - [test_04withdraw.py-->line:97] - ERROR: 用例--【提现用户id正确和金额是负数】---执行失败
+2021-08-24 13:40:52,865 - [test_04withdraw.py-->line:99] - ERROR: {'code': 2, 'msg': '金额必须大于0并且小于或者等于500000'} not in {'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+Traceback (most recent call last):
+  File "D:\work\zx5jkzdh\jichu\py35_21day_project\testcases\test_04withdraw.py", line 90, in test_withdraw
+    self.assertDictIn(expected, res)
+  File "D:\work\zx5jkzdh\jichu\py35_21day_project\testcases\test_04withdraw.py", line 111, in assertDictIn
+    raise AssertionError("{} not in {}".format(expected,res))
+AssertionError: {'code': 2, 'msg': '金额必须大于0并且小于或者等于500000'} not in {'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-08-24 13:40:53,158 - [test_04withdraw.py-->line:97] - ERROR: 用例--【提现用户id正确和金额是500001】---执行失败
+2021-08-24 13:40:53,159 - [test_04withdraw.py-->line:99] - ERROR: {'code': 2, 'msg': '金额必须大于0并且小于或者等于500000'} not in {'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+Traceback (most recent call last):
+  File "D:\work\zx5jkzdh\jichu\py35_21day_project\testcases\test_04withdraw.py", line 90, in test_withdraw
+    self.assertDictIn(expected, res)
+  File "D:\work\zx5jkzdh\jichu\py35_21day_project\testcases\test_04withdraw.py", line 111, in assertDictIn
+    raise AssertionError("{} not in {}".format(expected,res))
+AssertionError: {'code': 2, 'msg': '金额必须大于0并且小于或者等于500000'} not in {'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-08-24 13:40:53,463 - [test_04withdraw.py-->line:103] - INFO: 用例--【提现用户id和金额都正确金额为500000】---执行成功
+2021-08-24 13:40:53,754 - [test_04withdraw.py-->line:103] - INFO: 用例--【提现金额非数字】---执行成功
+2021-08-24 13:40:54,051 - [test_04withdraw.py-->line:103] - INFO: 用例--【提现金额有1位小数】---执行成功
+2021-08-24 13:40:54,352 - [test_04withdraw.py-->line:103] - INFO: 用例--【提现金额有2位小数】---执行成功
+2021-08-24 13:40:54,644 - [test_04withdraw.py-->line:103] - INFO: 用例--【提现金额有3位小数】---执行成功
+2021-08-24 13:40:54,944 - [test_04withdraw.py-->line:97] - ERROR: 用例--【提现金额为0】---执行失败
+2021-08-24 13:40:54,945 - [test_04withdraw.py-->line:99] - ERROR: {'code': 2, 'msg': '金额必须大于0并且小于或者等于500000'} not in {'code': 0, 'msg': 'OK', 'data': {'id': 123508937, 'leave_amount': 4143742.54, 'mobile_phone': '13584213498', 'reg_name': 'lele', 'reg_time': '2021-08-09 10:35:49.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+Traceback (most recent call last):
+  File "D:\work\zx5jkzdh\jichu\py35_21day_project\testcases\test_04withdraw.py", line 90, in test_withdraw
+    self.assertDictIn(expected, res)
+  File "D:\work\zx5jkzdh\jichu\py35_21day_project\testcases\test_04withdraw.py", line 111, in assertDictIn
+    raise AssertionError("{} not in {}".format(expected,res))
+AssertionError: {'code': 2, 'msg': '金额必须大于0并且小于或者等于500000'} not in {'code': 0, 'msg': 'OK', 'data': {'id': 123508937, 'leave_amount': 4143742.54, 'mobile_phone': '13584213498', 'reg_name': 'lele', 'reg_time': '2021-08-09 10:35:49.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-08-24 13:40:55,503 - [test_05add.py-->line:111] - INFO: 用例--【新增项目成功】---执行成功
+2021-08-24 13:40:55,854 - [test_05add.py-->line:111] - INFO: 用例--【用户id为空】---执行成功
+2021-08-24 13:40:56,185 - [test_05add.py-->line:111] - INFO: 用例--【标题为空】---执行成功
+2021-08-24 13:40:56,514 - [test_05add.py-->line:111] - INFO: 用例--【借款金额为空】---执行成功
+2021-08-24 13:40:56,836 - [test_05add.py-->line:111] - INFO: 用例--【年利率为空】---执行成功
+2021-08-24 13:40:57,155 - [test_05add.py-->line:111] - INFO: 用例--【借款期限为空】---执行成功
+2021-08-24 13:40:57,503 - [test_05add.py-->line:111] - INFO: 用例--【借款期限类型为空】---执行成功
+2021-08-24 13:40:57,818 - [test_05add.py-->line:111] - INFO: 用例--【竞标天数为空】---执行成功
+2021-08-24 13:40:58,143 - [test_05add.py-->line:111] - INFO: 用例--【借款期限为0月】---执行成功
+2021-08-24 13:40:58,476 - [test_05add.py-->line:111] - INFO: 用例--【借款期限为37月】---执行成功
+2021-08-24 13:40:58,787 - [test_05add.py-->line:111] - INFO: 用例--【成功-借款期限为1月】---执行成功
+2021-08-24 13:40:59,096 - [test_05add.py-->line:111] - INFO: 用例--【成功-借款期限为36月】---执行成功
+2021-08-24 13:40:59,450 - [test_05add.py-->line:111] - INFO: 用例--【借款期限为9天】---执行成功
+2021-08-24 13:41:00,218 - [test_05add.py-->line:111] - INFO: 用例--【借款期限为46天】---执行成功
+2021-08-24 13:41:00,592 - [test_05add.py-->line:111] - INFO: 用例--【成功-借款期限为10天】---执行成功
+2021-08-24 13:41:00,930 - [test_05add.py-->line:111] - INFO: 用例--【成功-借款期限为45天】---执行成功
+2021-08-24 13:41:01,266 - [test_05add.py-->line:111] - INFO: 用例--【成功-竞标天数为1天】---执行成功
+2021-08-24 13:41:01,613 - [test_05add.py-->line:111] - INFO: 用例--【成功-竞标天数为10天】---执行成功
+2021-08-24 13:41:01,938 - [test_05add.py-->line:111] - INFO: 用例--【竞标天数为0天】---执行成功
+2021-08-24 13:41:02,261 - [test_05add.py-->line:111] - INFO: 用例--【竞标天数为11天】---执行成功
+2021-08-24 13:41:02,756 - [test_06audit.py-->line:137] - INFO: 用例--【审核通过】---执行成功
+2021-08-24 13:41:03,020 - [test_06audit.py-->line:137] - INFO: 用例--【审核不通过】---执行成功
+2021-08-24 13:41:03,281 - [test_06audit.py-->line:137] - INFO: 用例--【项目id为空】---执行成功
+2021-08-24 13:41:03,543 - [test_06audit.py-->line:137] - INFO: 用例--【审核状态为空】---执行成功
+2021-08-24 13:41:03,810 - [test_06audit.py-->line:137] - INFO: 用例--【项目id乱填】---执行成功
+2021-08-24 13:41:04,066 - [test_06audit.py-->line:137] - INFO: 用例--【审核数据乱填】---执行成功
+2021-08-24 13:41:04,325 - [test_06audit.py-->line:137] - INFO: 用例--【项目不在待审核状态】---执行成功
+2021-08-24 13:41:05,290 - [test_07invest.py-->line:109] - INFO: 用例--------【成功投资】---------执行成功
+2021-08-24 13:41:05,968 - [test_07invest.py-->line:109] - INFO: 用例--------【缺少用户id】---------执行成功
+2021-08-24 13:41:06,636 - [test_07invest.py-->line:109] - INFO: 用例--------【缺少项目id】---------执行成功
+2021-08-24 13:41:07,276 - [test_07invest.py-->line:105] - ERROR: 用例--------【缺少价格】---------执行失败
+2021-08-24 13:41:07,277 - [test_07invest.py-->line:106] - ERROR: '金额为空' not found in '余额为空'
+Traceback (most recent call last):
+  File "D:\work\zx5jkzdh\jichu\py35_21day_project\testcases\test_07invest.py", line 97, in test_invest
+    self.assertIn(expected['msg'],res['msg'])
+  File "D:\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '金额为空' not found in '余额为空'
+2021-08-24 13:41:07,947 - [test_07invest.py-->line:105] - ERROR: 用例--------【价格有小数】---------执行失败
+2021-08-24 13:41:07,947 - [test_07invest.py-->line:106] - ERROR: '投资金额必须大于100，并且可以被100整除' not found in '充值金额必须大于100，并且可以被100整除'
+Traceback (most recent call last):
+  File "D:\work\zx5jkzdh\jichu\py35_21day_project\testcases\test_07invest.py", line 97, in test_invest
+    self.assertIn(expected['msg'],res['msg'])
+  File "D:\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '投资金额必须大于100，并且可以被100整除' not found in '充值金额必须大于100，并且可以被100整除'
+2021-08-24 13:41:08,596 - [test_07invest.py-->line:109] - INFO: 用例--------【价格大于余额】---------执行成功
